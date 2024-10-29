@@ -38,7 +38,8 @@ dependencies {
 	// jwt
 	implementation 'io.jsonwebtoken:jjwt:0.9.1'
 
-
+	implementation 'org.slf4j:slf4j-api:2.0.16' // Use the latest compatible version
+	implementation 'ch.qos.logback:logback-classic:1.4.12' // Logback (SLF4J의 구현체)
 	implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
 
 	runtimeOnly 'com.h2database:h2' // DB 설정, 필요에 따라 변경 가능

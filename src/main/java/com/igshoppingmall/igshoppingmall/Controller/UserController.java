@@ -1,9 +1,11 @@
 package com.igshoppingmall.igshoppingmall.Controller;
 
+import ch.qos.logback.classic.Logger;
 import com.igshoppingmall.igshoppingmall.dto.UserResponseDto;
 import com.igshoppingmall.igshoppingmall.model.User;
 import com.igshoppingmall.igshoppingmall.service.UserService;
 import com.igshoppingmall.igshoppingmall.utils.JwtUtil;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -14,6 +16,8 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/api/users")
 public class UserController {
 
+    private static final Logger logger = (Logger) LoggerFactory.getLogger(UserController.class);
+
     private final UserService userService;
 
     @Autowired
@@ -21,6 +25,8 @@ public class UserController {
 
     @Autowired
     private JwtUtil jwtUtil;
+
+
 
     @Autowired
     public UserController(UserService userService) {
@@ -52,6 +58,8 @@ public class UserController {
         // 로그인 로직 처리
         User findUser = userService.findByEmail(user.getEmail());
         Boolean isAuthenticated = false;
+
+        logger.info("User 정보 : {}", user.toString());
 
         if (findUser != null) {
             // 비밀번호 비교
