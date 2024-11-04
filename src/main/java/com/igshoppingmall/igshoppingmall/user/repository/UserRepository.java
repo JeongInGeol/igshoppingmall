@@ -1,6 +1,6 @@
-package com.igshoppingmall.igshoppingmall.repository;
+package com.igshoppingmall.igshoppingmall.user.repository;
 
-import com.igshoppingmall.igshoppingmall.model.User;
+import com.igshoppingmall.igshoppingmall.user.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

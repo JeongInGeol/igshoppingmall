@@ -1,10 +1,10 @@
-package com.igshoppingmall.igshoppingmall.Controller;
+package com.igshoppingmall.igshoppingmall.user.Controller;
 
 import ch.qos.logback.classic.Logger;
-import com.igshoppingmall.igshoppingmall.dto.UserResponseDto;
-import com.igshoppingmall.igshoppingmall.model.User;
-import com.igshoppingmall.igshoppingmall.service.UserService;
-import com.igshoppingmall.igshoppingmall.utils.JwtUtil;
+import com.igshoppingmall.igshoppingmall.user.dto.UserResponseDto;
+import com.igshoppingmall.igshoppingmall.user.model.User;
+import com.igshoppingmall.igshoppingmall.user.service.UserService;
+import com.igshoppingmall.igshoppingmall.cmm.utils.JwtUtil;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

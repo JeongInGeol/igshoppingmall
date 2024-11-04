@@ -1,4 +1,4 @@
-package com.igshoppingmall.igshoppingmall.utils;
+package com.igshoppingmall.igshoppingmall.cmm.utils;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

@@ -1,4 +1,4 @@
-package com.igshoppingmall.igshoppingmall.config;
+package com.igshoppingmall.igshoppingmall.cmm.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

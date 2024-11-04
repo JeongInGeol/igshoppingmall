@@ -1,4 +1,4 @@
-package com.igshoppingmall.igshoppingmall.model;
+package com.igshoppingmall.igshoppingmall.user.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.Entity;

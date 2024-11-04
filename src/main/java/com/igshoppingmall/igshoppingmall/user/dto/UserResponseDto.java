@@ -1,8 +1,16 @@
-package com.igshoppingmall.igshoppingmall.dto;
+package com.igshoppingmall.igshoppingmall.user.dto;
 
+
+import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+
+@Data
 public class UserResponseDto {
     private String email;
     private String username;
+    private String id;
+    private String nickname;
 
     // 생성자
     public UserResponseDto(String email, String username) {
@@ -10,12 +18,7 @@ public class UserResponseDto {
         this.username = username;
     }
 
-    // Getters
-    public String getEmail() {
-        return email;
-    }
+    public UserResponseDto() {
 
-    public String getUsername() {
-        return username;
     }
 }
