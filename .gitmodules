@@ -1,0 +1,6 @@
+[submodule "igvibe-front"]
+	path = igvibe-front
+	url = https://github.com/JeongInGeol/igvibe-front.git
+[submodule "igvibe-back"]
+	path = igvibe-back
+	url = https://github.com/JeongInGeol/igvibe-back.git
